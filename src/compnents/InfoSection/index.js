@@ -1,34 +1,53 @@
-import React from 'react'
+ import React from "react"; 
 import {
-   InfoContainer,
-   InfoRow,
-   ImgWrap,
-   Img,
-   InfoWrapper,
-} from './InfosctionContainer'
+  InfoContainer,
+  InfoRow,
+  ImgWrap,
+  Img,
+  InfoWrapper,
+  FormH1,
+} from "./InfosctionContainer";
+ 
 
-const InfoSection = ({
-    id,
-    imgStart,
-    img,
-    headLine,  
-    table,
+
+ 
+
+export const InfoSection = ({
+  imgStart, 
+  img,
+  headLine,
+  table,
+  img2,
+  img3,
+  title,
+  lightText,
+  dark,
 }) => {
-    return (
-      <>
-        <InfoContainer id={id}>
-          <InfoWrapper>
-            <InfoRow imgStart={imgStart}>
-                {table}
-                {headLine}
-              <ImgWrap>
-                <Img src={img} />
-              </ImgWrap>
-            </InfoRow>
-          </InfoWrapper>
-        </InfoContainer>
-      </>
-    );
-};
 
-export default InfoSection
+  return (
+    <>
+      <InfoContainer id="Tv">
+        <InfoWrapper>
+          <InfoRow imgStart={imgStart}>
+            {table}
+            <FormH1>{headLine}</FormH1>
+            <ImgWrap>
+              <Img
+                src={img}
+                title={title}
+                lightText={lightText}
+                dark={dark}
+              />
+              <Img src={img2} />
+              <Img to="/img" src={img3} title={title} />
+              {Text}
+            </ImgWrap>
+          </InfoRow>
+        </InfoWrapper>
+      </InfoContainer>
+    </>
+  );
+ };
+
+
+ export default InfoSection

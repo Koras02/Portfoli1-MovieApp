@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   text-decoration: none;
+  background-color:#000;
+  max-width:1900px;
+  /* max-height:100px; */
 }
 
 .App-logo {
