@@ -24,6 +24,7 @@ export const homeObjone = {
     img3: Img3,
     size: 'small',
     width: '100px',
+ 
 };
 
 
@@ -33,6 +34,7 @@ export const homeObjTwo = {
   lightTextDesc: true,
   topLine: "Movie",
   headLine: "카테고리 별로 시청해 보세요",
+  bottomLine:'스위트',
   description: "어떤 작품을 원하십니까?",
   buttonLable: "선택하기",
   imgStart: true,

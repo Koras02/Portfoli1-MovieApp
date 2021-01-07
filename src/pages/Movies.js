@@ -14,7 +14,6 @@ import {animateScroll as scroll} from 'react-scroll'
 import Category from "../compnents/InfoSection/Category";
 import Footer from "./Footer";
  
-  
  
 
 const Movies = ({ toggle }) => {
@@ -40,7 +39,13 @@ const Movies = ({ toggle }) => {
 
   return (
     <>
-      <FormHeader scrollNav={scrollNav} onClick={toggleHome} smoth={true}>
+      <FormHeader
+        scrollNav={scrollNav}
+        onClick={toggleHome}
+        smoth={true}
+        state={true}
+        loading
+      >
         <HeaderLinks to="/Movies" onClick={toggleHome}>
           Movies
         </HeaderLinks>
@@ -52,7 +57,10 @@ const Movies = ({ toggle }) => {
         >
           Tv
         </HeaderLinks>
-        <HeaderLinks>Search</HeaderLinks>
+        <HeaderLinks to="Category" smooth={true} scrollNav={scroll}>
+          Search
+        </HeaderLinks>
+        <HeaderLinks to="/">NetFlix</HeaderLinks> 
         <HeaderInput type="search"></HeaderInput>
         <HeaderLink to="/Sign">로그인</HeaderLink>
       </FormHeader>
@@ -64,13 +72,11 @@ const Movies = ({ toggle }) => {
             onReady={true}
             fullscreen={true}
             muted={true}
-            url="https://youtu.be/F8sUY7mOrDk"
+            url="https://www.youtube.com/playlist?list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B"
             width="100%"
             height="500px"
             loading={true}
             loop={true}
-            playIcon={false}
-            playlogo={false}
           />
         </FormH1>
       </FormBody>

@@ -2,7 +2,6 @@ import React from 'react'
 import {FormHeader, FormH1, FormPLink} from './CategoryContainer' 
 
  
-
 const Category = () => {
     return (
       <FormHeader>

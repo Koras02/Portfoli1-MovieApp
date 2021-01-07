@@ -10,6 +10,7 @@ import Imgs from './pages/Imgs';
 function App() {
   return (
     <Router>
+   
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/Movies" component={Movies} />

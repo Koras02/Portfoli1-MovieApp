@@ -8,8 +8,6 @@ import {
   FormH1,
 } from "./InfosctionContainer";
  
-
-sadsa
  
 
 export const InfoSection = ({

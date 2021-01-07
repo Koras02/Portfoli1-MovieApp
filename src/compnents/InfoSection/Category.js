@@ -1,7 +1,5 @@
 import React from "react";
 import "reactjs-popup/dist/index.css";
- 
-
 import {
   InfoContainer,
   InfoRow,
@@ -10,8 +8,10 @@ import {
   InfoWrapper,
   FormH1,
 } from "./CategoryContainer";
-
  
+ 
+ 
+
 const Category = ({
   imgStart,
   img,
@@ -22,14 +22,16 @@ const Category = ({
   lightText,
   dark,
 }) => {
+ 
   return (
     <>
-      <InfoContainer id="Tv">
+      <InfoContainer id="Category">
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <FormH1>{headLine}</FormH1>
             <ImgWrap>
-              <Img src={img4} title={title}></Img>
+              <Img src={img4}>
+              </Img>
               <Img src={img4}></Img>
               <Img src={img4}></Img>
               <Img src={img4}></Img>
@@ -40,5 +42,5 @@ const Category = ({
     </>
   );
 };
-
+ 
 export default Category;
