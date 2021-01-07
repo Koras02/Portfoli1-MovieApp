@@ -7,11 +7,11 @@ export const InfoContainer = styled.div`
   height: 900px;
   width: 100%;
   position: relative;
-  bottom: 20px;
+  bottom: 30px;
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 10 10 20px;
+  padding: 20px 20px 30px 50px;
   border: 1px solid #000;
   justify-content: center;
 `;
@@ -58,6 +58,7 @@ export const Img = styled.img`
   top: -100px;
   max-width: 1200px;
   color: red;
+  padding: 20px;
   margin-left: 30px;
   font: bold 18px/24px arial;
 
@@ -86,6 +87,9 @@ export const FormH1 = styled.div`
   }
 `;
 
+ 
+
+
 export const FormDescrtion = styled.div`
   color: red;
   float: right;
@@ -105,3 +109,5 @@ export const FormDescrtion = styled.div`
     transition: 5s;
   }
 `;
+
+ 

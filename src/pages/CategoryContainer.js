@@ -9,6 +9,7 @@ export const FormHeader = styled.div`
    bottom:50px;
    background: #000;
    color: red;
+   overflow-x:hidden;
    `;
 
 
@@ -40,5 +41,4 @@ export const FormH1 = styled.div`
   text-align:center;
   border:1px solid #000; 
   color:#fff;
-
 `;

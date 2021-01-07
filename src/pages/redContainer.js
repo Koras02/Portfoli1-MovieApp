@@ -13,7 +13,6 @@ export const FormHeader = styled.div`
 `;
 
 export const HeaderLinks = styled(LinkS)`
- 
   text-decoration: none;
   width: 100%;
   color: #fff;
@@ -73,15 +72,13 @@ export const player = styled.div`
  
 export const HeaderLink = styled(LinkR)`
   text-decoration: none;
-  width: 100%;
   color: #fff;
-  align-items: center;
-  padding: 4%;
-  position: relative;
+  text-align:right;
+  position: absolute;
   display:block;
   float:right;
-  bottom:105%;
-  left:94%;
+  right:7%;
+  bottom:34%;
   font: bold 18px/50px arial;
   &:hover{
     color:red;

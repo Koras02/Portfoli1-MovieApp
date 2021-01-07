@@ -4,6 +4,7 @@
   background-color:#000;
   max-width:1900px;
   /* max-height:100px; */
+  overflow: hidden;
 }
 
 .App-logo {

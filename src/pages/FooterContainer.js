@@ -8,6 +8,7 @@ export const FooterWrapper = styled.div`
   align-items: center;
   max-width: 1200px;
   margin: -20px auto;
+  overflow-x:hidden;
 
   &:hover {
     color: #01bf71;

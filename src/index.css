@@ -7,6 +7,7 @@ body {
    text-decoration: none;
   -moz-osx-font-smoothing: grayscale;
   background:#000;
+  overflow-x:hidden;
 }
 
 code {
