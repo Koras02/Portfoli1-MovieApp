@@ -9,7 +9,7 @@ function Home() {
          <HeaderLink 
          to="/Movies"
          >Movies</HeaderLink>
-         <HeaderLink to="/">Tv</HeaderLink>
+         <HeaderLink to="/Movies">Tv</HeaderLink>
          <HeaderLink>Search</HeaderLink>
          <HeaderInput type="search"></HeaderInput>
        </FormHeader>
