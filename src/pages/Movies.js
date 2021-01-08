@@ -13,33 +13,32 @@ import { homeObjone, homeObjTwo } from "../compnents/InfoSection/Data";
 import {animateScroll as scroll} from 'react-scroll'
 import Category from "../compnents/InfoSection/Category";
 import Footer from "./Footer";
- 
- 
+
+
 
 const Movies = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(true);
-      
-
-    const changeNav = () => {
-      if(window.scrollY > 80) {
-        setScrollNav(false)
+  const [scrollNav, setScrollNav] = useState(true);  
+  const changeNav = () => {
+    if(window.scrollY > 80) {
+      setScrollNav(false)
       } else {
         setScrollNav(true)
       }
     };
-
+    
     useEffect(() => {
       window.addEventListener('scroll', changeNav)
     }, [])
-
+    
 
     const toggleHome = () => {
       scroll.scrollToTop();
     }
-
+    
+  
   return (
     <>
-      <FormHeader
+     <FormHeader
         scrollNav={scrollNav}
         onClick={toggleHome}
         smoth={true}
@@ -84,7 +83,7 @@ const Movies = ({ toggle }) => {
       <Category {...homeObjTwo} />
       <Footer />
     </>
-  );
-}
+  );}
+  
 
 export default Movies;
