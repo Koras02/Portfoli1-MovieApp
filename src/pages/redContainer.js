@@ -8,8 +8,7 @@ export const FormHeader = styled.div`
   background: #000;
   height: 100px;
   border: 1px solid #000;
-  position:fixed;
-  display:block;
+  display:inline-block;
 `;
 
 export const HeaderLinks = styled(LinkS)`
@@ -17,7 +16,8 @@ export const HeaderLinks = styled(LinkS)`
   width: 100%;
   color: #fff;
   align-items: center;
-  padding: 4%;
+  padding: 2%;
+  margin:20px;
   position: relative;
   top: 25%;
   font: bold 18px/50px arial;
@@ -28,7 +28,7 @@ export const HeaderLinks = styled(LinkS)`
   }
 
   &:active {
-    border-bottom: 2px solid red;
+    border-bottom: 3px solid red;
     color: red;
     transition: 0.5s;
   }
@@ -73,13 +73,13 @@ export const player = styled.div`
 export const HeaderLink = styled(LinkR)`
   text-decoration: none;
   color: #fff;
-  text-align:right;
-  position: absolute;
+
+  position: relative;
   display:block;
   float:right;
-  right:7%;
-  bottom:34%;
-  font: bold 18px/50px arial;
+  left:3%;
+  top:26%;
+  font: bold 18px/28px arial;
   &:hover{
     color:red;
     transition: 0.5s;

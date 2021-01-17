@@ -61,6 +61,7 @@ export const Img = styled.img`
   padding: 20px;
   margin-left: 30px;
   font: bold 18px/24px arial;
+ 
 
   &:hover {
     opacity: 100%;

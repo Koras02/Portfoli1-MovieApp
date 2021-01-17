@@ -7,10 +7,9 @@ import {
   FormH1,
   HeaderLink,
 } from "./redContainer";
-import ReactPlayer from 'react-player';
 import InfoSection from "../compnents/InfoSection";
 import { homeObjone, homeObjTwo } from "../compnents/InfoSection/Data";
-import {animateScroll as scroll} from 'react-scroll'
+import {animateScroll, animateScroll as scroll} from 'react-scroll'
 import Category from "../compnents/InfoSection/Category";
 import Footer from "./Footer";
 
@@ -41,7 +40,7 @@ const Movies = ({ toggle }) => {
      <FormHeader
         scrollNav={scrollNav}
         onClick={toggleHome}
-        smoth={true}
+        smooth={true}
         state={true}
         loading
       >
@@ -65,21 +64,9 @@ const Movies = ({ toggle }) => {
       </FormHeader>
       <FormBody>
         <FormH1>
-          <ReactPlayer
-            className="player"
-            playing={true}
-            onReady={true}
-            fullscreen={true}
-            muted={true}
-            url="https://www.youtube.com/playlist?list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B"
-            width="100%"
-            height="500px"
-            loading={true}
-            loop={true}
-          />
         </FormH1>
       </FormBody>
-      <InfoSection {...homeObjone} />
+      <InfoSection {...homeObjone} scrollNav={scroll} animateScroll={animateScroll}/>
       <Category {...homeObjTwo} />
       <Footer />
     </>

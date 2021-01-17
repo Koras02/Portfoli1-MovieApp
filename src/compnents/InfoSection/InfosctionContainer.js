@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
   background:#000;
-  display:grid;
-  z-index:1;
   height:900px;
   width:100%;
   position: relative;

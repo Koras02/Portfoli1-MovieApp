@@ -1,4 +1,4 @@
- import React, { useEffect,useState} from "react"; 
+ import React, { useCallback, useEffect, useState } from "react"; 
 import {
   InfoContainer,
   InfoRow,
@@ -7,18 +7,11 @@ import {
   InfoWrapper,
   FormH1,
 } from "./InfosctionContainer";
-import Sex from "./Sex";
  
-
-function Toggle() {
-  useEffect(() => {
-    console.log("render");
-
-    return () => console.log("sss");
-  });
-  return <Sex />;
-}
-
+import DOLLITE from "./ToggleDescription/DOLLITE";
+ 
+ 
+ 
 export const InfoSection = ({
   imgStart, 
   img,
@@ -30,43 +23,43 @@ export const InfoSection = ({
   lightText,
   dark,
 }) => {
-  const [mounted, setMounted] = useState(true);
-  const [scrollNav, setScrollNav] = useState(true);
-  const toggle = ({ toggle }) => setMounted(!mounted);
-  const changeNav = () => {
-    if(window.scrollY > 80) {
-      setScrollNav(true)
-    } else {
-      setScrollNav(false)
-    }
-  };
+  const [toggle,setToggle] = useState(false);
+  const onToggle = useCallback(() => {
+  setTimeout(() => {
+    setToggle(toggle => !toggle);
+  },0)
+},[]);
+  const [scrollNav,setScrollNav] = useState(true);
+    const changeNav = () => {
+      if(window.scrollY > 100) {
+        setScrollNav(false)
+      } else {
+        setScrollNav(true)
+      }
+    };
 
-  useEffect(() => {
-    window.addEventListener('scroll',changeNav)
-  }, [])
-
+    useEffect(() => {
+      window.addEventListener('scroll', changeNav);
+    }, []);
   return (
     <>
-      <InfoContainer id="Tv">
+      <InfoContainer id="Tv" scrollNav={scrollNav}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
-            {table}
             <FormH1>{headLine}</FormH1>
             <ImgWrap>
-              <Img
+              <Img 
                 src={img}
                 title={title}
                 lightText={lightText}
                 dark={dark}
                 scrollNav={scrollNav}
-                onClick={toggle}
                 smooth={true}
-                duration={5000}
+                duration={500}
+                onClick={onToggle}
               />
               <Img
                 src={img2}
-                onClick={toggle}
-                scrollNav={scrollNav}
                 smooth={true}
                 duration={500}
                 animation="bounce"
@@ -74,26 +67,18 @@ export const InfoSection = ({
               <Img
                 to="/img"
                 src={img3}
-                onClick={toggle}
-                scrollNav={scrollNav}
                 smooth={true}
                 duration={500}
               />
-              <div>
-                {mounted && (
-                  <Toggle
-                    onClick={toggle}
-                    scrollNav={scrollNav}
-                    smooth={true}
-                    translate={true}
-                    duration={500}
-                  />
-                )}
-              </div>
             </ImgWrap>
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
+              <div>
+              <div 
+              toggle={toggle? 'ON' : 'OFF'} smooth={true} duration={500}/>
+                {toggle && <DOLLITE/>}
+              </div>
     </>
   );
  };

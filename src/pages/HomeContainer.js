@@ -17,7 +17,7 @@ export const HeaderLink = styled(LinkR)`
   position: relative;
   top: 25%;
   font: bold 18px/48px arial;
-  :checked
+ 
   
   &:hover {
       border-bottom: 2px solid red;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React   from "react";
 import "reactjs-popup/dist/index.css";
 import {
   InfoContainer,
@@ -7,10 +7,8 @@ import {
   Img,
   InfoWrapper,
   FormH1,
-} from "./CategoryContainer";
- 
- 
- 
+} from "./CategoryContainer";  
+
 
 const Category = ({
   imgStart,
@@ -22,7 +20,6 @@ const Category = ({
   lightText,
   dark,
 }) => {
- 
     return (
       <>
         <InfoContainer id="Category">
@@ -30,7 +27,10 @@ const Category = ({
             <InfoRow imgStart={imgStart}>
               <FormH1>{headLine}</FormH1>
               <ImgWrap>
-                <Img src={img4}></Img>
+                <Img src={img4} 
+                smooth={true}
+                state={true}
+                ></Img>
                 <Img src={img4}></Img>
                 <Img src={img4}></Img>
                 <Img src={img4}></Img>

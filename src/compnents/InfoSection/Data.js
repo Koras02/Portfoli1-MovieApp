@@ -3,7 +3,6 @@ import Img2 from '../../images/Aladdin.jpg'
 import Img3 from '../../images/THE HILL.jpg'
 import Img4 from "../../images/SweetHome.jpg";
 
-
 export const homeObjone = {
     lightBg:false,
     lightText:true,
@@ -24,7 +23,7 @@ export const homeObjone = {
     img3: Img3,
     size: 'small',
     width: '100px',
- 
+    smooth:true,
 };
 
 
