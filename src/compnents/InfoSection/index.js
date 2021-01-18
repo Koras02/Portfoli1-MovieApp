@@ -6,10 +6,10 @@ import {
   Img,
   InfoWrapper,
   FormH1,
+ 
 } from "./InfosctionContainer";
- 
-import DOLLITE from "./ToggleDescription/DOLLITE";
- 
+import Aladin from "./ToggleDescription/Aladin/Aladin";
+import DOLLITE from "./ToggleDescription/DOLLITE/DOLLITE";
  
  
 export const InfoSection = ({
@@ -17,18 +17,25 @@ export const InfoSection = ({
   img,
   headLine,
   table,
-  img2,
   img3,
+  img2,
   title,
   lightText,
   dark,
 }) => {
   const [toggle,setToggle] = useState(false);
+  const [aladin,setAladin] = useState(false);
   const onToggle = useCallback(() => {
   setTimeout(() => {
-    setToggle(toggle => !toggle);
+    setToggle(toggle => !toggle); 
+  },1000)
+},[]);
+  const onAladin = useCallback(() => {
+  setTimeout(() => {
+  setAladin(aladin => !aladin);
   },0)
 },[]);
+ 
   const [scrollNav,setScrollNav] = useState(true);
     const changeNav = () => {
       if(window.scrollY > 100) {
@@ -56,29 +63,35 @@ export const InfoSection = ({
                 scrollNav={scrollNav}
                 smooth={true}
                 duration={500}
-                onClick={onToggle}
-              />
+                onMouseOver={onToggle}
+                />
               <Img
+                to="/img"
                 src={img2}
                 smooth={true}
                 duration={500}
-                animation="bounce"
+                onMouseOver={onAladin}
               />
               <Img
                 to="/img"
                 src={img3}
                 smooth={true}
                 duration={500}
-              />
+                />
             </ImgWrap>
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
               <div>
-              <div 
+              <div  
               toggle={toggle? 'ON' : 'OFF'} smooth={true} duration={500}/>
-                {toggle && <DOLLITE/>}
-              </div>
+                {toggle && <DOLLITE />}
+               </div>        
+              <div>
+              <div  
+              toggle={aladin? 'ON' : 'OFF'} smooth={true} duration={500}/>
+                {aladin && <Aladin />}
+              </div>          
     </>
   );
  };

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
-  background:#000;
   height:900px;
   width:100%;
   position: relative;
@@ -105,4 +104,3 @@ export const FormDescrtion = styled.div`
   }
 `;
 
- 
