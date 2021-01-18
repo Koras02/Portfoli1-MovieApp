@@ -1,18 +1,23 @@
 import styled from 'styled-components';
 
 export const DOLITELISTFROM = styled.div`
-    width:20%;
-    max-width:4%;
-    max-height:10px;
-    min-width:20%;
-    min-height:10px;
-    padding-top:8%;
-    float:right;
-    border:1px solid #fff;
-    position:relative;
-    top:40%;right:30%;
+width:100%;
+height:400px;
+color:#fff;
+position:absolute;
+left:50%;
+top:30%;
+
 `;
 
-export const DOLIITETELELISTPITURUCE = styled.div`
- 
+export const DOLIITETELELISTPITURUCE = styled.div` 
+ height:100px;
+ color:#fff;
 `
+
+export const DOLITELISTDESCRIPTION = styled.div`
+  font:bold 16px/18px arial;
+  margin:40px 0px 0px 30px;
+`;
+
+ 

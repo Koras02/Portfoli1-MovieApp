@@ -26,11 +26,11 @@ export const DOLITEWrapperScreenVideo = styled.video`
 `;
 
 export const DOLITERightDescription = styled.div`
- width:40%;
- float:left;
- 
+ width:100%;
+ float:right;
+ display:block;
  position:absolute;
- right:10%;
+ left:50%;
 `;
 
 
@@ -39,20 +39,26 @@ export const DOLITEWrapperScreenH1 = styled.div`
    text-align:center;
    font:bold 24px/34px arial;
    color:red;
-   position:relative;
-   right:-10%;
-   top:10px;
+   display:block;
+   margin:0px 0px 0px 10px;
 `;
 
 export const DOLITEWrapperScreenP = styled.div`
-  font:bold 14px/16px arial;
-  float:left;
-  border:1px solid red;
+  text-align:center;
+  font:bold 14px/18px arial;
   color:#fff;
-  margin:100px -30px 0px 30px;
-  padding:18px;
-  position:relative;
-  top;2%;
-  right:2%;
+  float:left;
+  margin:90px 140px 90px -100px;
 
+  
+  @media screen and (max-width:1400px) {
+    margin:90px 140px 90px -120px;
+  }
+
+  @media screen and (max-width:1024px) {
+    margin:90px 140px 90px -140px;
+    color:red;
+    padding:2px;
+    display:block;
+  }
 `;
