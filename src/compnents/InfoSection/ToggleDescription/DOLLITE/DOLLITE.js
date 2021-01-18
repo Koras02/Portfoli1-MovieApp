@@ -7,13 +7,13 @@ import {
     DOLITERightDescription,
     DOLITEWrapperScreenP,
  } from './DOLITTEStyle'
-import Video from './Trailer/Trailer.mp4'
+import Video2 from './Trailer/Trailer.mp4'
 
 function DOLLITE() {    
     return (
         <>
          <DOLLITEWrapper>
-            <DOLITEWrapperScreenVideo autoPlay src={Video} />
+            <DOLITEWrapperScreenVideo autoPlay src={Video2} />
            <DOLITERightDescription>
             <DOLITEWrapperScreenH2>DOLITTELE</DOLITEWrapperScreenH2> 
             <DOLITEWrapperScreenP>출현/제작:</DOLITEWrapperScreenP>

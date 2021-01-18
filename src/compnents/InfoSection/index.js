@@ -33,7 +33,7 @@ export const InfoSection = ({
   const onAladin = useCallback(() => {
   setTimeout(() => {
   setAladin(aladin => !aladin);
-  },0)
+  },1000)
 },[]);
  
   const [scrollNav,setScrollNav] = useState(true);
@@ -63,14 +63,14 @@ export const InfoSection = ({
                 scrollNav={scrollNav}
                 smooth={true}
                 duration={500}
-                onMouseOver={onToggle}
+                onClick={onToggle}
                 />
               <Img
                 to="/img"
                 src={img2}
                 smooth={true}
                 duration={500}
-                onMouseOver={onAladin}
+                onClick={onAladin}
               />
               <Img
                 to="/img"

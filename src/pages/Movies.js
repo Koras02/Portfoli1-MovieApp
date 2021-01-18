@@ -3,15 +3,15 @@ import {
   FormHeader,
   HeaderLinks,
   HeaderInput,
-  FormBody,
-  FormH1,
   HeaderLink,
 } from "./redContainer";
 import InfoSection from "../compnents/InfoSection";
-import { homeObjone, homeObjTwo } from "../compnents/InfoSection/Data";
+import { homeObjone, homeObjThree, homeObjTwo } from "../compnents/InfoSection/Data";
 import {animateScroll, animateScroll as scroll} from 'react-scroll'
 import Category from "../compnents/InfoSection/Category";
 import Footer from "./Footer";
+import MainVisual from "./MainVisual/MainVisual";
+// import MainVisual from "./MainVisual/MainVisual";
 
 
 
@@ -62,10 +62,7 @@ const Movies = ({ toggle }) => {
         <HeaderInput type="search"></HeaderInput>
         <HeaderLink to="/Sign">로그인</HeaderLink>
       </FormHeader>
-      <FormBody>
-        <FormH1>
-        </FormH1>
-      </FormBody>
+      <MainVisual  {...homeObjThree} />
       <InfoSection {...homeObjone} scrollNav={scroll} animateScroll={animateScroll}/>
       <Category {...homeObjTwo} />
       <Footer />

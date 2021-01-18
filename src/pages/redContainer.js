@@ -39,18 +39,22 @@ export const HeaderLinks = styled(LinkS)`
 `;
 
 export const HeaderInput = styled.input`
-  width: 10%;
+  width: 13%;
   padding: 0.5%;
   align-items: center;
   display: block;
-  position: relative;
+  position:relative;
   overflow: hidden;
-  top: 25%;
-  right: 12%;
+  top:30%;
+  right:14%;
   color: #000;
-  border: 2px solid red;
+ 
   background: #fff;
   float: right;
+
+  @media screen and (max-width:960px) {
+    display:none;
+  }
 `;
 
 
@@ -77,11 +81,19 @@ export const HeaderLink = styled(LinkR)`
   position: relative;
   display:block;
   float:right;
-  left:3%;
-  top:26%;
+  left:5%;
+  top:30%;
+  
   font: bold 18px/28px arial;
   &:hover{
     color:red;
     transition: 0.5s;
   }
+
+
+  @media screen and (max-width:960px) {
+    margin:-14px 100px 0px 120px;
+    background:blue;
+    padding:5px;
+    border-radius:10%;
 `;

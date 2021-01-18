@@ -1,4 +1,4 @@
-import React   from "react";
+import React from "react";
 import "reactjs-popup/dist/index.css";
 import {
   InfoContainer,
@@ -12,14 +12,12 @@ import {
 
 const Category = ({
   imgStart,
-  img,
   headLine,
-  table,
   img4,
-  title,
-  lightText,
-  dark,
+  img5,
+  img6,
 }) => {
+ 
     return (
       <>
         <InfoContainer id="Category">
@@ -27,17 +25,16 @@ const Category = ({
             <InfoRow imgStart={imgStart}>
               <FormH1>{headLine}</FormH1>
               <ImgWrap>
-                <Img src={img4} 
-                smooth={true}
-                state={true}
-                ></Img>
-                <Img src={img4}></Img>
-                <Img src={img4}></Img>
+                <Img src={img4}>
+                </Img>
+                <Img src={img5}></Img>
+                <Img src={img6}></Img>
                 <Img src={img4}></Img>
               </ImgWrap>
             </InfoRow>
           </InfoWrapper>
         </InfoContainer>
+
       </>
     );
 }

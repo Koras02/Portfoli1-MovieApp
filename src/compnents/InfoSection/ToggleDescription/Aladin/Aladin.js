@@ -12,7 +12,7 @@ import Video from './Trailer/Aladin.mp4'
 export function Aladin() {
      return (
           <AladinWrapper>
-                   <AladinWrapperScreenVideo autoPlay unmuted src={Video}/>
+                   <AladinWrapperScreenVideo autoPlay src={Video}/>
                   <ALadinRightDescription>
                       <AladinWrapperScreenH1>Aladin</AladinWrapperScreenH1>
                       <AladinWrapperScreenP>출현/제작:</AladinWrapperScreenP>

@@ -58,6 +58,21 @@ export const Img = styled.img`
    color:red;
    margin-left:30px;
    font:bold 18px/24px arial;
+   
+   @media screen and (max-width:960px) {
+      padding:6px;
+      float:left;
+      width:28%;
+      margin:20px 0px 0x 0px;
+     
+ 
+   }
+   @media screen and (max-width:700px) {
+    padding:6px;
+    float:left;
+    width:22%;
+    margin:-20px 0px 0x- 30px;
+ }
 
    &:hover{
      opacity: 100%;
