@@ -6,7 +6,7 @@ import {
   HeaderLink,
 } from "./redContainer";
 import InfoSection from "../compnents/InfoSection";
-import { homeObjone, homeObjThree, homeObjTwo } from "../compnents/InfoSection/Data";
+import {homeObjone, homeObjThree, homeObjTwo } from "../compnents/InfoSection/Data";
 import {animateScroll, animateScroll as scroll} from 'react-scroll'
 import Category from "../compnents/InfoSection/Category";
 import Footer from "./Footer";

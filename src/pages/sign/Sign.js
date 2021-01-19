@@ -1,4 +1,4 @@
-import React  from "react";
+import React,{useState}  from "react";
 import {
   Container,
   FormWrap,
@@ -16,16 +16,23 @@ import {
   HeroBg,
 } from "./SignContainer";
 import Video from './1.mp4'
+import Video2 from './Avengers.mp4'
  
 
 
 // sign up 클릭시 나오는 로그인 페이지
 const SignIn = () =>  {
-    return (
+       const [random,setRandom] = useState();
+       
+       const Next = () => {
+         setRandom(random => random + 1);
+       }
+      return (
       <Container>
         <FormWrap>
           <HeroBg>
-            <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+            <VideoBg autoPlay muted src={Video2}  type="video/mp4" random={random} exact/>
+            <VideoBg autoPlay muted src={Video}  type="video/mp4" random={Next} />
           </HeroBg>
             <Icon to="/Movies">NIF</Icon>
           <FormContent>
