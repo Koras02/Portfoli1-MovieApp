@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './App.css';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Movies from './pages/Movies';
 import InfoSection from './compnents/InfoSection/index';
@@ -23,7 +23,7 @@ function App() {
     {loading === false ? (
       <Router>
         <Switch>
-          <Route exact path="/" component={Home} />
+          {/* <Route exact path="/" component={Home} /> */}
           <Route path="/Movies" component={Movies} />
           <Route path="/InfoSection" component={InfoSection} />
           <Route path="/Sign" component={Sign} />

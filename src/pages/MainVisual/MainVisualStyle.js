@@ -1,25 +1,19 @@
 import styled from 'styled-components';
+ 
 
 export const MainVisualWrapper = styled.div`
   width:100%;
-  height:400px;
-  border:1px solid #fff;
+  height:600px;
+  border:1px solid red;
 `;
 
 export const MainVisualForm = styled.div`
   width:80%;
-  height:400px;
-  border:1px solid red;
+  height:600px;
   margin:auto;
 `;
 
-export const MainVisualH1 = styled.div`
-  font:30px/24px arial;
-  color:#fff;
-  display:block;
-  margin:40px 0px 0px 20px;
-`;
-
+ 
 export const ImgWrap = styled.div`
   
 `;
@@ -27,33 +21,56 @@ export const ImgWrap = styled.div`
 export const Background = styled.img`
  
 `;
+ 
 
-export const MainVisualH2 = styled.div`
-  float:left;
-  font:bold 40px/24px arial;
+export const MainVisualVideo = styled.video`
+width:80%;
+height:600px; 
+margin-left:-14%;
+float:left;
+
+background: url('https://cdn3.movieweb.com/i/article/f3wffb0PxTFr66ctO4aaT7ag1W3w6V/1200:100/Tom-And-Jerry-The-Movie-Poster-Trailer-Release.jpg');
+border-top:1px solid red;
+background-repeat:no-repeat;
+`;
+
+
+export const MainVisualH1 = styled.div`
+font:bold 30px/40px arial;
+color:#fff;
+position:relative;
+left:10%;
+top:40px;
 `;
 
 export const MainVisualButton = styled.button`
-  border:1px solid red;
-  width:10%;
-  height:80px;
-  margin:10px 20px 30px 40px;
-  background: #ED4264;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFEDBC, #ED4264); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border-radius:2%;
-`;
-
-export const MainVisualVideo = styled.video`
-  width:40%;
-  height:70%;
-  margin:-50px 0px 0px 20%;
-  position:relative;
-  border-top:1px solid red;
-  border-bottom:1px solid red;
+  font:bold 24px/20px arial;
+  color:red;
   float:left;
-
- 
+  
+  position:relative;
+  left:4%;
+  top:90px;
+  margin-left:3%;
+  margin-top:2%;
+  padding:2%;
+  border:1px solid #000;
+  background: #fff;
+  box-sizing:border-box;
 `;
 
- 
+export const MainVisualButton2 = styled.button`
+font:bold 24px/20px arial;
+color:#fff;
+float:left;
+
+position:relative;
+left:4%;
+top:90px;
+margin-left:2%;
+margin-top:2%;
+padding:2%;
+border:1px solid #000;
+background: red;
+box-sizing:border-box;
+`;
