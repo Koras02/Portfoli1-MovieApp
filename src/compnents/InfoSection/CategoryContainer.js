@@ -61,18 +61,22 @@ export const Img = styled.img`
   padding: 20px;
   margin-left: 30px;
   font: bold 18px/24px arial;
+ 
+  
 
   &:hover {
     opacity: 100%;
     transition: 0.8s;
     border-bottom: 2px solid palegoldenrod;
     color: red;
+ 
   }
 
   &:active {
     border-bottom: 2px solid red;
   }
 `;
+
 
 export const FormH1 = styled.div`
   font: bold 24px/24px arial;

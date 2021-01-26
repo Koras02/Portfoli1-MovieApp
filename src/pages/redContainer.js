@@ -8,8 +8,7 @@ export const FormHeader = styled.div`
   background: #000;
   height: 100px;
   border: 1px solid #000;
-  position:fixed;
-  display:block;
+  display:inline-block;
 `;
 
 export const HeaderLinks = styled(LinkS)`
@@ -17,7 +16,8 @@ export const HeaderLinks = styled(LinkS)`
   width: 100%;
   color: #fff;
   align-items: center;
-  padding: 4%;
+  padding: 2%;
+  margin:20px;
   position: relative;
   top: 25%;
   font: bold 18px/50px arial;
@@ -28,7 +28,7 @@ export const HeaderLinks = styled(LinkS)`
   }
 
   &:active {
-    border-bottom: 2px solid red;
+    border-bottom: 3px solid red;
     color: red;
     transition: 0.5s;
   }
@@ -39,18 +39,22 @@ export const HeaderLinks = styled(LinkS)`
 `;
 
 export const HeaderInput = styled.input`
-  width: 10%;
+  width: 13%;
   padding: 0.5%;
   align-items: center;
   display: block;
-  position: relative;
+  position:relative;
   overflow: hidden;
-  top: 25%;
-  right: 12%;
+  top:30%;
+  right:14%;
   color: #000;
-  border: 2px solid red;
+ 
   background: #fff;
   float: right;
+
+  @media screen and (max-width:960px) {
+    display:none;
+  }
 `;
 
 
@@ -73,15 +77,23 @@ export const player = styled.div`
 export const HeaderLink = styled(LinkR)`
   text-decoration: none;
   color: #fff;
-  text-align:right;
-  position: absolute;
+
+  position: relative;
   display:block;
   float:right;
-  right:7%;
-  bottom:34%;
-  font: bold 18px/50px arial;
+  left:5%;
+  top:30%;
+  
+  font: bold 18px/28px arial;
   &:hover{
     color:red;
     transition: 0.5s;
   }
+
+
+  @media screen and (max-width:960px) {
+    margin:-14px 100px 0px 120px;
+    background:blue;
+    padding:5px;
+    border-radius:10%;
 `;

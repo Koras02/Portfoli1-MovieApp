@@ -16,7 +16,7 @@ export const Container = styled.div`
 export const HeroBg = styled.div`
   position: absolute;
   display: inline-block;
-  top:-10px;
+  top:-0px;
   right: 0;
   bottom: 0;
   left: 0;

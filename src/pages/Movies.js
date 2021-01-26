@@ -3,46 +3,44 @@ import {
   FormHeader,
   HeaderLinks,
   HeaderInput,
-  FormBody,
-  FormH1,
   HeaderLink,
 } from "./redContainer";
-import ReactPlayer from 'react-player';
 import InfoSection from "../compnents/InfoSection";
-import { homeObjone, homeObjTwo } from "../compnents/InfoSection/Data";
-import {animateScroll as scroll} from 'react-scroll'
+import {homeObjone, homeObjThree, homeObjTwo } from "../compnents/InfoSection/Data";
+import {animateScroll, animateScroll as scroll} from 'react-scroll'
 import Category from "../compnents/InfoSection/Category";
 import Footer from "./Footer";
- 
- 
+import MainVisual from "./MainVisual/MainVisual";
+// import MainVisual from "./MainVisual/MainVisual";
+
+
 
 const Movies = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(true);
-      
-
-    const changeNav = () => {
-      if(window.scrollY > 80) {
-        setScrollNav(false)
+  const [scrollNav, setScrollNav] = useState(true);  
+  const changeNav = () => {
+    if(window.scrollY > 80) {
+      setScrollNav(false)
       } else {
         setScrollNav(true)
       }
     };
-
+    
     useEffect(() => {
       window.addEventListener('scroll', changeNav)
     }, [])
-
+    
 
     const toggleHome = () => {
       scroll.scrollToTop();
     }
-
+    
+  
   return (
     <>
-      <FormHeader
+     <FormHeader
         scrollNav={scrollNav}
         onClick={toggleHome}
-        smoth={true}
+        smooth={true}
         state={true}
         loading
       >
@@ -64,27 +62,12 @@ const Movies = ({ toggle }) => {
         <HeaderInput type="search"></HeaderInput>
         <HeaderLink to="/Sign">로그인</HeaderLink>
       </FormHeader>
-      <FormBody>
-        <FormH1>
-          <ReactPlayer
-            className="player"
-            playing={true}
-            onReady={true}
-            fullscreen={true}
-            muted={true}
-            url="https://www.youtube.com/playlist?list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B"
-            width="100%"
-            height="500px"
-            loading={true}
-            loop={true}
-          />
-        </FormH1>
-      </FormBody>
-      <InfoSection {...homeObjone} />
+      <MainVisual  {...homeObjThree} />
+      <InfoSection {...homeObjone} scrollNav={scroll} animateScroll={animateScroll}/>
       <Category {...homeObjTwo} />
       <Footer />
     </>
-  );
-}
+  );}
+  
 
 export default Movies;
