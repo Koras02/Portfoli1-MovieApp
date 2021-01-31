@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Portfoli1-MovieApp/static/css/main.e1354402.chunk.css",
-    "main.js": "/Portfoli1-MovieApp/static/js/main.3f44db1b.chunk.js",
-    "main.js.map": "/Portfoli1-MovieApp/static/js/main.3f44db1b.chunk.js.map",
-    "runtime-main.js": "/Portfoli1-MovieApp/static/js/runtime-main.15baba27.js",
-    "runtime-main.js.map": "/Portfoli1-MovieApp/static/js/runtime-main.15baba27.js.map",
+    "main.js": "/Portfoli1-MovieApp/static/js/main.ce31ac5f.chunk.js",
+    "main.js.map": "/Portfoli1-MovieApp/static/js/main.ce31ac5f.chunk.js.map",
+    "runtime-main.js": "/Portfoli1-MovieApp/static/js/runtime-main.e580d182.js",
+    "runtime-main.js.map": "/Portfoli1-MovieApp/static/js/runtime-main.e580d182.js.map",
     "static/css/2.23154d62.chunk.css": "/Portfoli1-MovieApp/static/css/2.23154d62.chunk.css",
-    "static/js/2.17d099ce.chunk.js": "/Portfoli1-MovieApp/static/js/2.17d099ce.chunk.js",
-    "static/js/2.17d099ce.chunk.js.map": "/Portfoli1-MovieApp/static/js/2.17d099ce.chunk.js.map",
-    "static/js/3.ac9bb9b0.chunk.js": "/Portfoli1-MovieApp/static/js/3.ac9bb9b0.chunk.js",
-    "static/js/3.ac9bb9b0.chunk.js.map": "/Portfoli1-MovieApp/static/js/3.ac9bb9b0.chunk.js.map",
+    "static/js/2.87faefbd.chunk.js": "/Portfoli1-MovieApp/static/js/2.87faefbd.chunk.js",
+    "static/js/2.87faefbd.chunk.js.map": "/Portfoli1-MovieApp/static/js/2.87faefbd.chunk.js.map",
+    "static/js/3.d17f49ec.chunk.js": "/Portfoli1-MovieApp/static/js/3.d17f49ec.chunk.js",
+    "static/js/3.d17f49ec.chunk.js.map": "/Portfoli1-MovieApp/static/js/3.d17f49ec.chunk.js.map",
     "index.html": "/Portfoli1-MovieApp/index.html",
     "static/css/2.23154d62.chunk.css.map": "/Portfoli1-MovieApp/static/css/2.23154d62.chunk.css.map",
     "static/css/main.e1354402.chunk.css.map": "/Portfoli1-MovieApp/static/css/main.e1354402.chunk.css.map",
-    "static/js/2.17d099ce.chunk.js.LICENSE.txt": "/Portfoli1-MovieApp/static/js/2.17d099ce.chunk.js.LICENSE.txt",
+    "static/js/2.87faefbd.chunk.js.LICENSE.txt": "/Portfoli1-MovieApp/static/js/2.87faefbd.chunk.js.LICENSE.txt",
     "static/media/1.34b2c219.jpg": "/Portfoli1-MovieApp/static/media/1.34b2c219.jpg",
     "static/media/1.a13d472d.mp4": "/Portfoli1-MovieApp/static/media/1.a13d472d.mp4",
     "static/media/Aladdin.86e3767b.jpg": "/Portfoli1-MovieApp/static/media/Aladdin.86e3767b.jpg",
@@ -26,10 +26,10 @@
     "static/media/black.116154a9.jpg": "/Portfoli1-MovieApp/static/media/black.116154a9.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.15baba27.js",
+    "static/js/runtime-main.e580d182.js",
     "static/css/2.23154d62.chunk.css",
-    "static/js/2.17d099ce.chunk.js",
+    "static/js/2.87faefbd.chunk.js",
     "static/css/main.e1354402.chunk.css",
-    "static/js/main.3f44db1b.chunk.js"
+    "static/js/main.ce31ac5f.chunk.js"
   ]
 }
